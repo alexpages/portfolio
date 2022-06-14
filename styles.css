@@ -1,11 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
-
 body{
     display:flex;
     flex-direction: column;
     font-family:'Manrope', sans-serif;
+    background-color: #ECECEC;
+}
+
+a{
+    border-radius: 1rem;
+    padding:10px;
+    border:solid;
+    text-decoration: none;
+    transition: background-color 350ms ease-in-out,color 350ms ease-in-out, border-color 350ms ease-in-out;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, purple, orange) border-box;
+    border: 5px solid transparent;
+    border-radius: 50px;
+}
+a:hover{
+    transition: all 350ms ease-in-out,color 350ms ease-in-out, border-color 350ms ease-in-out;
+    color:black;
+    border-color:black;
 }
 
 li{
@@ -15,7 +31,6 @@ li{
 .sub_header{
     font-weight: 900;
 }
-
 
 .avatar_container img{
     width:300px;
@@ -44,14 +59,24 @@ header{
     justify-content: space-evenly;
 }
 
+.active{
+    background-color: aquamarine;
+    transition: all 0.5s ease-in;
+}
 
 img{
     width:400px;
     height:auto;
 }
 .projects{
-    height:100vh;
+    min-height: 100vh;
     width: 100%;
+}
+.project_template{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+
 }
 .project_body{
     margin: 40px 40px 0px 40px;
@@ -59,15 +84,22 @@ img{
 
 .project_content{
     display:flex;
-    align-items: center;
     flex-direction: column;  
+}
+
+.project_content img{
+    justify-content: center;
+}
+.project_tecnologies{
+    justify-content: start;
 }
 .project_tecnologies{
     display:flex;  
+    padding:10px;
 }
 .project_tecnologies li{
-    margin-left: 10px;
     padding:10px;
+    margin-right:10px;
     border: solid black;
 }
 
@@ -81,14 +113,16 @@ img{
     border:solid black;
     padding:10px 100px 10px 100px;
     text-align: center;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills{
     display:flex;
     flex-direction: column;
     text-align: center;
+    min-height: 100vh;
+    justify-content: center;
 }
 .indv_skills {
     display:flex;
