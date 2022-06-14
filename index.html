@@ -7,17 +7,23 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="javascript.js"></script>
+    <script src="https://kit.fontawesome.com/87b6d8fbb0.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
     <header>
-        <ul class="header_items">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Skills</li>
-        </ul>
-    </header>
+        <i class="fa-solid fa-dragon"></i>
+        <nav class="nav_items">
+            <a href="#avatar_container">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </nav>
+        <nav class="nav_icons">
+            <a href="https://github.com/alexintelc"> <i class="fa-brands fa-github"></i></a>   
+            <a href="https://www.linkedin.com/in/alex-pages/"> <i class="fa-brands fa-linkedin"></i> </a> 
+        </nav>
+      </header>
 
     <div class ="avatar_container">
         <img src="./images/avatar.jpeg" alt="avatar">
@@ -65,7 +71,6 @@
                         <li>Keras</li>
                     </ul>
                 </div>
-
                 <footer class="project_footer">
                     <a href="https://github.com/alexpages" class="visit_project">See Code</a>
                 </footer>       
@@ -98,13 +103,11 @@
 
     <section id ="skills" class = "skills">
         <h2 class="sub_header" class="sub_header" class="sub_header" class="sub_header">Skills</h2>
-        <div>
-            <ul class ="indv_skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li> <!-- Insertar desplegable en modo hover para: Numpy, Pandas, Scikit, Keras, Skimage, Matplotlib -->
-            </ul>
+        <div class ="indv_skills">
+            <i class="fa-brands fa-html5"> HTML</i>
+            <i class="fa-brands fa-css3-alt">CSS</i>
+            <i class="fa-brands fa-js">JS</i>
+            <i class="fa-brands fa-python">Python</i> <!-- Insertar desplegable en modo hover para: Numpy, Pandas, Scikit, Keras, Skimage, Matplotlib -->
         </div>
     <section>
     

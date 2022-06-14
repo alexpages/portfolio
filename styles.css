@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
 body{
@@ -7,18 +6,16 @@ body{
     font-family:'Manrope', sans-serif;
     background-color: #ECECEC;
 }
-
-a{
-    border-radius: 1rem;
+.visit_project{
     padding:10px;
     border:solid;
     text-decoration: none;
     transition: background-color 350ms ease-in-out,color 350ms ease-in-out, border-color 350ms ease-in-out;
     background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, purple, orange) border-box;
     border: 5px solid transparent;
-    border-radius: 50px;
+    border-radius: 1rem;
 }
-a:hover{
+.visit_project:hover{
     transition: all 350ms ease-in-out,color 350ms ease-in-out, border-color 350ms ease-in-out;
     color:black;
     border-color:black;
@@ -53,10 +50,31 @@ header{
     align-items: center;
     width:100%;
 }
-.header_items{
+
+.nav_items{
     display:flex;
     width:100%;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+.nav_items a{
+    text-decoration: none;
+    transition: all 0.35s ease 0s;
+}
+
+.nav_icons{
+    display:flex;
+}
+
+.nav_icons a, .nav_items a{
+    margin-right:20px;
+    color:black;
+}
+
+.nav_items a:hover{
+    font-weight: 900;
+    transition: all 0.35s ease 0s;
+    border-bottom: solid 2.5px black;
 }
 
 .active{
@@ -87,20 +105,24 @@ img{
     flex-direction: column;  
 }
 
-.project_content img{
-    justify-content: center;
+.projects img{
+    margin-left:auto;
+    margin-right:auto;
+    height:250px;
+    width:auto;
 }
 .project_tecnologies{
     justify-content: start;
 }
 .project_tecnologies{
     display:flex;  
-    padding:10px;
+    padding-left: 0;
 }
 .project_tecnologies li{
     padding:10px;
     margin-right:10px;
     border: solid black;
+    border-radius: 1rem;
 }
 
 .project_footer {
@@ -115,6 +137,7 @@ img{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1rem;
 }
 
 .skills{
@@ -128,8 +151,8 @@ img{
     display:flex;
     justify-content: space-evenly;
 }
-.indv_skills li{
-    border:solid black;
+.indv_skills{
     padding:10px;
+
 }
 
