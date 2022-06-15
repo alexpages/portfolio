@@ -5,6 +5,8 @@ body{
     flex-direction: column;
     font-family:'Manrope', sans-serif;
     background-color: #ECECEC;
+    margin:10px 30px 10px 30px;
+    min-height: 100vh;
 }
 .visit_project{
     padding:10px;
@@ -23,6 +25,9 @@ body{
 
 li{
     list-style: none;
+}
+h1,h2 {
+    margin
 }
 
 .sub_header{
@@ -44,30 +49,39 @@ li{
 }
 
 header{
-    position:fixed;
     display:flex;
-    justify-content: space-evenly;
-    align-items: center;
     width:100%;
+    min-height:40px;
+    padding:0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top:0vh;
+    font-size:20px;
+}
+
+.menu_container{
+    display:flex;
+    gap:2rem;
 }
 
 .nav_items{
     display:flex;
-    width:100%;
-    justify-content: flex-end;
     text-decoration: none;
+    gap:1rem;
 }
+
 .nav_items a{
     text-decoration: none;
     transition: all 0.35s ease 0s;
 }
 
 .nav_icons{
-    display:flex;
+    display:flex;  
+    gap:1rem;
 }
 
 .nav_icons a, .nav_items a{
-    margin-right:20px;
     color:black;
 }
 
@@ -106,10 +120,10 @@ img{
 }
 
 .projects img{
-    margin-left:auto;
-    margin-right:auto;
     height:250px;
     width:auto;
+    margin-left:auto;
+    margin-right:auto;
 }
 .project_tecnologies{
     justify-content: start;
