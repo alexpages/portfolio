@@ -1,12 +1,14 @@
-
-function header(){
-    $(window).scroll(function(e) {
-
-        var distanceScrolled = $(this).scrollTop();
+function smooth_scroll(){
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
     
-        $('.menu_container').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
-    
-    })
-};
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+}
 
-header();
+
+smooth_scroll();

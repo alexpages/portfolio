@@ -14,9 +14,9 @@
 <body>
     <header>
         <i class="fa-solid fa-dragon"></i>
-        <section class="menu_container">
+        <section id="menu_container" class="menu_container">
             <nav class="nav_items">
-                <a href="#avatar_container">About</a>
+                <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
             </nav>
@@ -27,12 +27,17 @@
         </section>
     </header>
 
-    <div class ="avatar_container">
-        <img src="./images/avatar.jpeg" alt="avatar">
-        <h1>Alex Pages Andreu</h1> 
-        <h2 class="sub_header" class="sub_header" class="sub_header" class="sub_header" class="sub_header">Software Engineer</h2>
-        <a href="https://www.linkedin.com/in/alex-pages/" class="visit_project">Contact me</a>
-    </div>       
+    <section id= "about" class="about">
+        <div class ="avatar_container">
+            <div class="avatar">
+                <img src="./images/avatar.jpeg" class = "avatar_img" alt="avatar">
+            </div>
+            <h1>Alex Pages Andreu</h1> 
+            <h2 class="sub_header" class="sub_header" class="sub_header" class="sub_header" class="sub_header">Software Engineer</h2>
+            <a href="https://www.linkedin.com/in/alex-pages/" class="visit_project">Contact me</a>
+        </div>       
+    </section>
+
 
     <section id ="projects" class = "projects">
         
@@ -106,10 +111,10 @@
     <section id ="skills" class = "skills">
         <h2 class="sub_header" class="sub_header" class="sub_header" class="sub_header">Skills</h2>
         <div class ="indv_skills">
-            <i class="fa-brands fa-html5"> HTML</i>
-            <i class="fa-brands fa-css3-alt">CSS</i>
-            <i class="fa-brands fa-js">JS</i>
-            <i class="fa-brands fa-python">Python</i> <!-- Insertar desplegable en modo hover para: Numpy, Pandas, Scikit, Keras, Skimage, Matplotlib -->
+            <img class ="languages" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+            <img class ="languages"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+            <img class ="languages"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <img class ="languages"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
         </div>
     <section>
     
