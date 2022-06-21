@@ -1,14 +1,22 @@
-function smooth_scroll(){
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+    var myButton = document.getElementById("topButton");
+    if (document.body.scrollTop >100 || document.documentElement.scrollTop>100){
+        myButton.style.opacity=1;
+        myButton.style.cursor="pointer";
+        
+    }
+    else{
+        myButton.style.opacity=0;
+        myButton.style.cursor="auto";
+
+    }
 }
 
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
-smooth_scroll();

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 
 
 :root{
@@ -42,7 +42,7 @@ h1{
 .visit_project{
     padding:10px;
     text-decoration: none;
-    border: 4px solid;
+    border: 3.5px solid;
     border-radius: 1rem;
     margin-top:15px;
     transition: all 250ms ease-in;
@@ -201,7 +201,7 @@ img{
 .project_tecnologies li{
     padding:10px;
     margin-right:10px;
-    font-weight: 900px;
+    font-weight: 900;
     font-size: 0.75em;
     border-radius: 1rem;
     background-color:var(--tech_background_color);
@@ -226,6 +226,8 @@ img{
     text-align: center;
     min-height: 100vh;
     justify-content: center;
+    margin-left:40px;
+    margin-right:40px;
 }
 
 .indv_skills {
@@ -255,6 +257,9 @@ img{
     width:fit-content;
     height:auto;
 }
+figure{
+    margin:auto;
+}
 
 /* Tablets responsive design*/
 @media only screen and (min-width:768px){
@@ -262,9 +267,32 @@ img{
 
 }
 
+.scroll_up_button{
+    position:fixed;
+    bottom:30px;
+    right:20px;
+    z-index:99;
+    cursor:pointer;
+    padding: 10px 15px 10px 15px;
+    border:none;
+    font-size:25px;
+    color:var(--button_background_color);
+    background-color: var(--tech_background_color);
+    transition: all ease-in 0.15s;
+    border-radius: 100%;
+    opacity:0;
+
+}
+
+.scroll_up_button:hover{
+    background-color: var(--header_background_color);
+    color:var(--header_text_color);
+    transition: all ease-in 0.15s;
+}
+
 
 /* Smartphone responsive design*/ 
-@media only screen and (mix-width:767px){
+@media only screen and (max-width:767px){
 
 
 }
