@@ -12,5 +12,5 @@ This is my personal website.
 3. Added JQuery to add some motion to the website.
 
 ## Note:
-- The website is a never ending project, therefore, expect to be modified through time. 
-- If you think you can help me by commenting or by suggesting any enhancement, feel free to do so :).
+- The website is a never ending project, therefore, expect it to be modified through time. 
+- If you think you can help me by suggesting any enhancement, feel free to do so :).
