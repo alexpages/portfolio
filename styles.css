@@ -9,6 +9,9 @@
     --header_background_color: #1E2022;
     --header_text_color:#F0F5F9;
     --tech_background_color:#67718e21;
+    --life_tag_color:#f6c6aa;
+    --education_tag_color:#c5f0c8;
+    --experience_tag_color:#aedbf8;
 }
 
 html{
@@ -37,7 +40,6 @@ h1{
     margin-top:10px;
     font-size:35px;
 }
-
 
 .visit_project{
     padding:10px;
@@ -79,7 +81,6 @@ li{
 
 .avatar{
     background-image: url("/images/background.png");
-    background-size:900px;
     width:100%;
     display:flex;
     justify-content: center;
@@ -88,6 +89,32 @@ li{
     background-repeat: no-repeat;
     object-fit: fill;
     background-size:cover;
+}
+.life{
+    background-color: var(--life_tag_color) !important;
+}
+.education{
+    background-color: var(--education_tag_color) !important;
+}
+
+.experience{
+    background-color: var(--experience_tag_color) !important;
+}
+
+.tags{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.info_tags{
+    display: flex;
+    text-align: center;
+    margin-top:40px;
+}
+.tag_column{
+    margin-right: 10px;
 }
 
 .avatar_container{
