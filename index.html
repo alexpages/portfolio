@@ -14,19 +14,20 @@
 
 
 <body>
-    <header>
+    <header class ="nav_bar_container">
         <i class="fa-solid fa-dragon logo"></i>
-        <section id="menu_container" class="menu_container">
-            <nav class="nav_items">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-            </nav>
-            <nav class="nav_icons">
-                <a href="https://github.com/alexpages"> <i class="fa-brands fa-github"></i></a>   
-                <a href="https://www.linkedin.com/in/alex-pages/"> <i class="fa-brands fa-linkedin"></i> </a> 
-            </nav>
-        </section>
+        <button class="toggle_button" onclick="burger_function()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav_items">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="https://github.com/alexpages"> <i class="fa-brands fa-github"></i></a>   
+            <a href="https://www.linkedin.com/in/alex-pages/"> <i class="fa-brands fa-linkedin"></i> </a> 
+        </nav>
     </header>
 
     <section id= "about" class="about">
@@ -49,14 +50,14 @@
                 </div>
                 <div class="tag_column">
                     <ul class="project_tecnologies tags">
-                        <li>Worked in Automotive industry</li>
-                        <li>Electrical Engineer on 2014</li>
+                        <li>Automotive industry</li>
+                        <li>Electrical Engineer on 2019</li>
                         <li>Polyglot</li>
                         
                 </div>
                 <div class="tag_column">
                     <ul class="project_tecnologies tags">
-                        <li>Worked in IT on Pharma</li>
+                        <li>IT on Pharma industry</li>
                         <li>Master's Degree in Informatics Engineering</li>
                         <li>Currently in Asia</li>
                 </div>
@@ -117,7 +118,7 @@
                 <div class="project_content">
                     <img src="./images/portfolio.png" alt="Portfoliot">
                     <h2 class="sub_header"> Portfolio</h2>
-                    <p class ="description">This was the first introduction to HTML and CSS after doing the Odin Project. Playing wiht some transitions, header and footer location and Flexbox.
+                    <p class ="description">This was the first introduction to HTML and CSS after doing the Odin Project. Playing with some transitions, header and footer location and Flexbox.
                     </p>
                     <p class ="description">
                         It is in fact a very simple project, and its main purpose is to show my dedication in the process of learning how to program while studying my Informatics Engineering Master's Degree.    
@@ -159,10 +160,7 @@
                 <img class ="languages" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />  
                 <figcaption class="skill_caption">TENSORFLOW</figcaption>
             </figure>
-           
-           
-            
-                  
+             
         </div>
     </section>
 
@@ -170,6 +168,5 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    
 </body>
 </html>
