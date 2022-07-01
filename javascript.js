@@ -22,6 +22,15 @@ function topFunction() {
 function button(){
     const toggleButton = document.getElementsByClassName("toggle_button")[0]
     const navBarLinks = document.getElementsByClassName("nav_items")[0]
-    navBarLinks.classList.toggle('active')   
+    navBarLinks.classList.toggle('active')  
+    
 }
+
+function random(){
+    if (($(window).width() > 767) && (navBarLinks.classList.contains('active'))){
+        navBarLinks.classList.toggle('active')  
+    }
+}
+
+random();
 
