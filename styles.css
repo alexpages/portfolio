@@ -132,7 +132,6 @@ li{
 header{
     display:flex;
     min-height:40px;
-    padding:0.5rem;
     align-items: center;
     justify-content: space-between;
     position:sticky;
@@ -161,7 +160,7 @@ header{
 }
 
 .logo{
-    margin-left:15px;
+    padding:1rem;
 }
 .nav_items{
     display:flex;
@@ -170,17 +169,22 @@ header{
     margin-right:25px;
 }
 
+.nav_items ul{
+    display:flex;
+    gap:1rem;
+}
+
 .nav_items a{
     text-decoration: none;
     transition: all 0.35s ease 0s;
     color:var(--header_text_color);
 }
 
-.nav_items a:hover {
+.nav_items li:hover {
     font-weight: 900;
     transition: all 0.35s ease 0s;
-    border-bottom: solid 2.5px var(--header_text_color);
     font-size:22px;
+    background-color: #555;
 }
 
 img{
@@ -319,10 +323,13 @@ figure{
     flex-direction: column;
     justify-content: space-between;
     background-color: transparent;
+    position:absolute;
     cursor:pointer;
     border:none;
     width: 40px;
     height:21px;
+    right:1rem;
+    top:1rem;
 }
 
 .toggle_button:hover >span{
@@ -338,17 +345,35 @@ figure{
     transition:all ease-in 250ms;
 }
 /* Smartphone responsive design*/ 
-@media only screen and (max-width:767px){
-
-    .nav_items{
-        display:none;
-       
-    }
+@media only screen and (max-width:767px){ 
 
     .toggle_button{
         display:flex;
     }
-
+    .nav_bar_container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav_items{
+        display:none;
+    }
+    .nav_items ul{
+        flex-direction:column;
+        align-items:flex-start;
+        width:100%;
+        padding-left:0;
+        margin-top: 0;
+    }
+    .nav_items ul li{
+        width:100%;
+        padding-left:20px;
+        text-align: center;
+    }
+    .nav_items.active{
+        display:flex;
+        width:100%;
+        align-items:center;
+    }
 }
 
 /* Tablets responsive design

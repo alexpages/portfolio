@@ -18,12 +18,10 @@ function topFunction() {
     document.documentElement.scrollTop = 0;º
   }
 
-function burger_function() {
-    var x = document.getElementById("nav_items");
-    if (x.style.display=="none"){
-        x.style.display="flex";
-        x.style.flexDirection="column";
-        x.style.height="100%";
-    }
+
+function button(){
+    const toggleButton = document.getElementsByClassName("toggle_button")[0]
+    const navBarLinks = document.getElementsByClassName("nav_items")[0]
+    navBarLinks.classList.toggle('active')   
 }
 
