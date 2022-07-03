@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 
-
+/* GLOBAL VARIABLES */ 
 :root{
     --button_border_color:#551b8a;
     --button_background_color:#551b8a;
@@ -12,6 +12,7 @@
     --tech_background_color:#67718e21;
     --hamburger_hover:#6f3ba0;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -50,6 +51,10 @@ h1, h2, h3, h4, h5, h6, p {
     overflow-wrap: break-word;
 }
 
+li{
+    list-style: none;
+}
+
 
 .visit_project{
     padding:10px;
@@ -66,20 +71,100 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--button_background_color);
     color:var(--header_text_color);
 }
-.links_info{
+
+
+
+/*__________HEADER__________*/
+header{
     display:flex;
-    flex-direction:row;
-    justify-content: center;
+    min-height:40px;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    top:0vh;
+    font-size:20px;
+    background-color: var(--header_background_color);
+    color: var(--header_text_color);
+    transition:all ease-in 250ms;
+}
+header.active{
+    background-color: var(--header_background_color_blurred);
 }
 
-.links_info a{
-    margin-right:15px;
+.header_container{
+    margin-left:65px;
+
 }
 
-li{
-    list-style: none;
+.header_container a:hover{
+    color:var(--hamburger_hover);
+}
+.logo{
+    padding:1rem;
+}
+.menu_actions{
+    display:flex;
+    gap:1rem;
+    justify-content: flex-end;
+    order:3;
+    padding:1rem;
+    font-size: 22px;
 }
 
+
+.menu_actions li, button{
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+
+.nav_bar_toggle .icon-bar{
+    display: block;
+    width: 22px;
+    height: 0,5px;
+    border-radius: 1px;
+    margin-top:4px;
+}
+.nav_bar_toggle{
+    gap:1rem;
+}
+
+
+.nav_items{
+    display:flex;
+    text-decoration: none;
+    margin-right:25px;
+}
+
+.nav_items ul{
+    display:flex;
+    gap:1rem;
+}
+
+.theme{
+    background-color:transparent;
+    color:var(--header_text_color);
+    border:none;
+    font-size:20px;
+}
+
+.nav_items a, .icons_header{
+    text-decoration: none;
+    transition: all 0.35s ease 0s;
+    color:var(--header_text_color);
+    display:block;
+}
+
+.icons_header i:hover, .nav_items li:hover, .theme:hover {
+    font-weight: 900;
+    transition: all 0.35s ease 0s;
+    color:var(--hamburger_hover);
+    border:none;
+    text-decoration: none;
+}
+
+/*__________ABOUT__________*/
 .avatar_img{
     width:300px;
     height:auto;
@@ -100,19 +185,6 @@ li{
     object-fit: fill;
     background-size:cover;
 }
-.life{
-    background-color: var(--button_background_color) !important;
-    color:var(--header_text_color) !important;
-}
-.education{
-    background-color: var(--button_background_color) !important;
-    color:var(--header_text_color) !important;
-}
-
-.experience{
-    background-color: var(--button_background_color) !important;
-    color:var(--header_text_color) !important;
-}
 
 .tags{
     display:flex;
@@ -128,11 +200,17 @@ li{
     padding:10px;
     width:100%;
     justify-content: center;
+    gap:1rem;
 
 }
 
-.tag_column{
-    padding-right:10px;
+.links_info{
+    display:flex;
+    flex-direction:row;
+}
+
+.links_info a{
+    margin-right:15px;
 }
 
 .avatar_container{
@@ -143,74 +221,31 @@ li{
     height:110vh;
 }
 
-header{
-    display:flex;
-    min-height:40px;
-    align-items: center;
-    justify-content: space-between;
-    width:100%;
-    top:0vh;
-    font-size:20px;
-    background-color: var(--header_background_color);
-    color: var(--header_text_color);
-    transition:all ease-in 250ms;
-}
-header.active{
-    background-color: var(--header_background_color_blurred);
-}
-
-.header_container{
-    margin:0;
-}
-
-
-.nav_bar_toggle .icon-bar{
-    display: block;
-    width: 22px;
-    height: 0,5px;
-    border-radius: 1px;
-    margin-top:4px;
-}
-.nav_bar_toggle{
-    gap:1rem;
-}
 
 .sub_header{
     margin-bottom:15px;
     margin-top:20px;
 }
-
-.logo{
-    padding:1rem;
+.life{
+    background-color: var(--button_background_color) !important;
+    color:var(--header_text_color) !important;
 }
-.nav_items{
-    display:flex;
-    text-decoration: none;
-    margin-right:25px;
-}
-
-.nav_items ul{
-    display:flex;
-    gap:1rem;
+.education{
+    background-color: var(--button_background_color) !important;
+    color:var(--header_text_color) !important;
 }
 
-.nav_items a{
-    text-decoration: none;
-    transition: all 0.35s ease 0s;
-    color:var(--header_text_color);
-    display:block;
-}
-
-.nav_items li:hover {
-    font-weight: 900;
-    transition: all 0.35s ease 0s;
-    background-color: #555;
+.experience{
+    background-color: var(--button_background_color) !important;
+    color:var(--header_text_color) !important;
 }
 
 img{
     width:400px;
     height:auto;
 }
+
+/*__________PROJECTS__________*/
 .projects{
     min-height: 100vh;
     width: 90%;
@@ -253,11 +288,11 @@ img{
 
 .project_tecnologies li{
     padding:10px;
-    margin-right:10px;
     font-weight: 100;
     font-size: 0.75em;
     border-radius: 1rem;
     background-color:var(--tech_background_color);
+    margin-right:5px;
 }
 
 .project_footer {
@@ -272,6 +307,18 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+.languages img{
+    width:fit-content;
+    height:auto;
+}
+figure{
+    margin:auto;
+}
+
+
+
+/*__________SKILLS__________*/
 
 .skills{
     display:flex;
@@ -305,14 +352,6 @@ img{
     padding:7.5px;
 }
 
-.languages img{
-    width:fit-content;
-    height:auto;
-}
-figure{
-    margin:auto;
-}
-
 .scroll_up_button{
     position:fixed;
     bottom:30px;
@@ -341,13 +380,12 @@ figure{
     flex-direction: column;
     justify-content: space-between;
     background-color: transparent;
-    position:absolute;
     cursor:pointer;
     border:none;
     width: 40px;
     height:21px;
-    right:1rem;
-    top:1rem;
+    align-self: center;
+
 }
 
 .toggle_button:hover >span{
@@ -362,6 +400,9 @@ figure{
     border-radius:10px;
     transition:all ease-in 250ms;
 }
+
+/*__________MEDIA_QUERIES__________*/
+
 /* Smartphone responsive design*/ 
 @media only screen and (max-width:767px){ 
 
@@ -370,8 +411,7 @@ figure{
         display:flex;
     }
     .nav_bar_container{
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         top:0vh;
     }
     .nav_items{
@@ -390,16 +430,22 @@ figure{
         text-align: center;
     }
     
-
+    .header_container{
+        margin:0;
+    }
     .nav_items.active{
         display:flex;
         width:100%;
         align-items:center;
+        margin:0;
     }
 
     /* Content */ 
     .project_body{
         flex-wrap: wrap;
+    }
+    .project_content{
+        margin:0;
     }
 
     .project_tecnologies{
@@ -420,7 +466,8 @@ figure{
         height:auto;
     }
     .projects img{
-        max-width:100%;
+        max-width:70%;
+
         height:auto;
     }
     .project_footer a{

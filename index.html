@@ -12,22 +12,25 @@
     <script src="jquery-3.6.0.min.js"></script>
 </head>
 
-
 <body>
     <header class ="nav_bar_container">
         <i class="fa-solid fa-dragon logo"></i>
-        <button class="toggle_button" onclick="button()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+        <section class="menu_actions">
+            <li><a href="https://github.com/alexpages" class="icons_header"> <i class="fa-brands fa-github"></i></a>   </li>
+            <li><a href="https://www.linkedin.com/in/alex-pages/" class="icons_header"> <i class="fa-brands fa-linkedin"></i> </a> </li>
+            <li><button class="theme" class="icons_header"><i class="fa-solid fa-moon"></i></button></li>
+            <button class="toggle_button" onclick="button()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </section>
+
         <div class="nav_items">
             <ul class = "header_container">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="https://github.com/alexpages"> <i class="fa-brands fa-github"></i></a>   </li>
-                <li><a href="https://www.linkedin.com/in/alex-pages/"> <i class="fa-brands fa-linkedin"></i> </a> </li>
+                <li><a href="#about" class="icons_header">About</a></li>
+                <li><a href="#projects" class="icons_header">Projects</a></li>
+                <li><a href="#skills" class="icons_header">Skills</a></li>
             </ul>   
         </div>
     </header>
@@ -41,7 +44,7 @@
             <h2>Software Engineer</h2>
             <div class="links_info">
                 <a href="https://www.linkedin.com/in/alex-pages/" class="visit_project">Contact me</a>
-                <a href="/Alex Pages.pdf" class="visit_project" >Download CV</a>
+                <a href="/Alex Pages.pdf" class="visit_project" >Download CV</a>         
             </div>
             <div class="info_tags">
                 <div class="tag_column">
