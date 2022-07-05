@@ -18,7 +18,9 @@
         <section class="menu_actions">
             <li><a href="https://github.com/alexpages" class="icons_header"> <i class="fa-brands fa-github"></i></a>   </li>
             <li><a href="https://www.linkedin.com/in/alex-pages/" class="icons_header"> <i class="fa-brands fa-linkedin"></i> </a> </li>
-            <li><button class="theme" class="icons_header"><i class="fa-solid fa-moon"></i></button></li>
+            <li><button class="theme icons_header" onclick="setTheme(); change_icon();" >
+                <i class="theme_icon fa-solid fa-moon"></i>
+            </button></li>
             <button class="toggle_button" onclick="button()">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -40,8 +42,8 @@
             <div class="avatar">
                 <img src="./images/avatar.jpeg" class = "avatar_img" alt="avatar">
             </div>
-            <h1>Alex Pages Andreu</h1> 
-            <h2>Software Engineer</h2>
+            <h1 class="plain_text">Alex Pages Andreu</h1> 
+            <h2 class="plain_text">Software Engineer</h2>
             <div class="links_info">
                 <a href="https://www.linkedin.com/in/alex-pages/" class="visit_project">Contact me</a>
                 <a href="/Alex Pages.pdf" class="visit_project" >Download CV</a>         
@@ -50,20 +52,20 @@
                 <div class="tag_column">
                     <ul class="project_tecnologies tags">
                         <li class="experience">Experience</li>
-                        <li>Automotive industry</li>
-                        <li>IT on Pharma industry</li>
+                        <li class="plain_text">Automotive industry</li>
+                        <li class="plain_text">IT on Pharma industry</li>
                 </div>
                 <div class="tag_column">
                     <ul class="project_tecnologies tags">
                         <li class="education">Education</li>
-                        <li>Electrical Engineer on 2019</li>
-                        <li>Master's Degree in Informatics Engineering</li>                     
+                        <li class="plain_text">Electrical Engineer on 2019</li>
+                        <li class="plain_text">Master's Degree in Informatics Engineering</li>                     
                 </div>
                 <div class="tag_column">
                     <ul class="project_tecnologies tags">
                         <li class="life">Life</li>
-                        <li>Polyglot</li>
-                        <li>Currently in Asia</li>
+                        <li class="plain_text">Polyglot</li>
+                        <li class="plain_text">Currently in Asia</li>
                 </div>
             </div>
         </div>       
@@ -73,16 +75,16 @@
             <div class="project_body">
                 <div class="project_content">
                     <img src="./images/nft.jpg" alt="nft">
-                    <h2 class="sub_header"> NFT Search Engine</h2>
-                    <p class ="description">Among the rise of Web3 and all its derivate products such as NFTs, building an app that filters NFTs among different technologies (Solana, Eth, etc.) was interesting to me.
+                    <h2 class="sub_header plain_text"> NFT Search Engine</h2>
+                    <p class ="description plain_text">Among the rise of Web3 and all its derivate products such as NFTs, building an app that filters NFTs among different technologies (Solana, Eth, etc.) was interesting to me.
                         
                     </p>
-                    <p class ="description"> Therefore, this app works as a search engine and the main focus is to constantly see the most rated and priced NFTs of the marked, with constant updates to the correspondent websites.
+                    <p class ="description plain_text"> Therefore, this app works as a search engine and the main focus is to constantly see the most rated and priced NFTs of the marked, with constant updates to the correspondent websites.
                     </p>
                     <ul class="project_tecnologies">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
+                        <li class="plain_text">HTML</li>
+                        <li class="plain_text">CSS</li>
+                        <li class="plain_text">JAVASCRIPT</li>
                     </ul>
                 </div>
 
@@ -96,17 +98,16 @@
             <div class="project_body">
                 <div class="project_content">
                     <img src="./images/neural_network.jpg" alt="Neural Network">
-                    <h2 class="sub_header"> Neural Network</h2>
-                    <p class ="description">The following project is a compilation of different techniques and analysis regarding simple neural networks.
-                        The main purpose is to analyze the precission of a few CNN regarding a pre-defined dataset with pictures of dogs and cats.
+                    <h2 class="sub_header plain_text"> Neural Network</h2>
+                    <p class ="description plain_text">The main purpose is to analyze the precission of a few CNN regarding a pre-defined dataset with pictures of dogs and cats.
                         This project creates simple CNNs and Xception neural network, and also it creates datagenerator together with plot functions.
                     </p>
                     <ul class="project_tecnologies">
-                        <li>PYTHON</li>
-                        <li>SKIMAGE</li>
-                        <li>MATPLOTLIB</li>
-                        <li>NUMPY</li>
-                        <li>TENSORFLOW / KERAS</li>
+                        <li class="plain_text">PYTHON</li>
+                        <li class="plain_text">SKIMAGE</li>
+                        <li class="plain_text">MATPLOTLIB</li>
+                        <li class="plain_text">NUMPY</li>
+                        <li class="plain_text">TENSORFLOW / KERAS</li>
                     </ul>
                 </div>
                 <div class="project_footer">
@@ -120,15 +121,15 @@
                 <div class="project_content">
                     <img src="./images/portfolio.jpg" alt="Portfoliot">
                     <h2 class="sub_header"> Portfolio</h2>
-                    <p class ="description">This was the first introduction to HTML and CSS after doing the Odin Project. Playing with some transitions, header and footer location and Flexbox.
+                    <p class ="description plain_text">This was the first introduction to HTML and CSS after doing the Odin Project. Playing with some transitions, header and footer location and Flexbox.
                     </p>
-                    <p class ="description">
+                    <p class ="description plain_text">
                         It is in fact a very simple project, and its main purpose is to show my dedication in the process of learning how to program while studying my Informatics Engineering Master's Degree.    
                     </p>
                     <ul class="project_tecnologies">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
+                        <li class="plain_text">HTML</li>
+                        <li class="plain_text">CSS</li>
+                        <li class="plain_text">JAVASCRIPT</li>
                     </ul>
                 </div>
 
@@ -144,23 +145,23 @@
         <div class ="indv_skills">
             <figure class="language_figure">
                 <img class ="languages" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-                <figcaption class="skill_caption">HTML</figcaption>
+                <figcaption class="skill_caption plain_text">HTML</figcaption>
             </figure> 
             <figure class="language_figure">
                 <img class ="languages"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-                <figcaption class="skill_caption">CSS</figcaption>
+                <figcaption class="skill_caption plain_text">CSS</figcaption>
             </figure>
             <figure class="language_figure">
                 <img class ="languages"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <figcaption class="skill_caption">JAVASCRIPT</figcaption>
+                <figcaption class="skill_caption plain_text">JAVASCRIPT</figcaption>
             </figure>
             <figure class="language_figure">
                 <img class ="languages"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                <figcaption class="skill_caption">PYTHON</figcaption>
+                <figcaption class="skill_caption plain_text">PYTHON</figcaption>
             </figure>
             <figure>
                 <img class ="languages" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />  
-                <figcaption class="skill_caption">TENSORFLOW</figcaption>
+                <figcaption class="skill_caption plain_text">TENSORFLOW</figcaption>
             </figure>
              
         </div>

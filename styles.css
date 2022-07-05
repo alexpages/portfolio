@@ -1,8 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
-
 /* GLOBAL VARIABLES */ 
-:root{
+:root, :root.light{
     --button_border_color:#551b8a;
     --button_background_color:#551b8a;
     --body_background_color:#F0F5F9;
@@ -11,12 +9,33 @@
     --header_text_color:#F0F5F9;
     --tech_background_color:#67718e21;
     --hamburger_hover:#6f3ba0;
+    --hamburger_color:#F0F5F9;
+    --plain_text:#1E2022 !important;
+    --visit_project_text: #551b8a;
+    --visit_project_border: #551b8a;
+    --subheader_color:#1E2022;
+    --scroll_up_button:#551b8a;
 }
 
+:root.dark{
+    --button_border_color:#551b8a;
+    --button_background_color:#551b8a;
+    --body_background_color:#1E2022;
+    --header_background_color: #1E2022;
+    --header_background_color_blurred:  rgba(30,32,34,.48);
+    --header_text_color:#F0F5F9;
+    --tech_background_color:#67718e21;
+    --hamburger_hover:#6f3ba0;
+    --hamburger_color:#F0F5F9;
+    --plain_text: #F0F5F9 !important;
+    --visit_project_text: #F0F5F9;
+    --visit_project_border: #551b8a;
+    --subheader_color:#F0F5F9;
+    --scroll_up_button:#F0F5F9;
+}
 
 html{
     scroll-behavior: smooth;
-
 
 }
 html,body{
@@ -47,10 +66,6 @@ h1{
     font-size:35px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    overflow-wrap: break-word;
-}
-
 li{
     list-style: none;
 }
@@ -59,10 +74,15 @@ li{
 .visit_project{
     padding:10px;
     text-decoration: none;
-    border: 3.5px solid;
+    border: 3.5px solid var(--visit_project_border);
     border-radius: 1rem;
     margin-top:15px;
     transition: all 250ms ease-in;
+
+}
+
+.visit_project{
+    color: var(--visit_project_text);
 }
 
 .visit_project:hover{
@@ -70,6 +90,10 @@ li{
     border-color:var(--button_border_color);
     background-color: var(--button_background_color);
     color:var(--header_text_color);
+}
+
+.plain_text{
+    color:var(--plain_text);
 }
 
 
@@ -164,6 +188,14 @@ header.active{
     text-decoration: none;
 }
 
+.section_scroll{
+    font-weight: 900 !important;
+    transition: all 0.35s ease 0s !important;
+    color:var(--hamburger_hover) !important;
+    border:none !important;
+    text-decoration: none !important;
+}
+
 /*__________ABOUT__________*/
 .avatar_img{
     width:300px;
@@ -221,10 +253,10 @@ header.active{
     height:110vh;
 }
 
-
 .sub_header{
     margin-bottom:15px;
     margin-top:20px;
+    color:var(--subheader_color)!important;
 }
 .life{
     background-color: var(--button_background_color) !important;
@@ -343,7 +375,7 @@ figure{
 
 .skill_caption{
     margin-top: 10px;
-    color:var(--header_background_color);
+    color:var(--plain_text);
     background-color: var(--tech_background_color);
     border-radius: 1rem;
     width:min-content;
@@ -361,7 +393,7 @@ figure{
     padding: 10px 15px 10px 15px;
     border:none;
     font-size:25px;
-    color:var(--button_background_color);
+    color:var(--scroll_up_button);
     background-color: var(--tech_background_color);
     transition: all ease-in 0.15s;
     border-radius: 100%;
@@ -370,7 +402,7 @@ figure{
 }
 
 .scroll_up_button:hover{
-    background-color: var(--header_background_color);
+    background-color: var(--visit_project_border);
     color:var(--header_text_color);
     transition: all ease-in 0.15s;
 }
@@ -385,8 +417,8 @@ figure{
     width: 40px;
     height:21px;
     align-self: center;
-
 }
+
 
 .toggle_button:hover >span{
     background-color:var(--hamburger_hover);
@@ -396,7 +428,7 @@ figure{
 .bar{
     height:3px;
     width:100%;
-    background-color: var(--body_background_color);
+    background-color: var(--hamburger_color);
     border-radius:10px;
     transition:all ease-in 250ms;
 }
@@ -432,6 +464,11 @@ figure{
     
     .header_container{
         margin:0;
+
+    }
+
+    .test{
+        background-color: green;
     }
     .nav_items.active{
         display:flex;
