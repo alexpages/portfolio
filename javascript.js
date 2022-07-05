@@ -87,9 +87,6 @@ function setTheme(){
     else{
         html_class_list.replace("dark","light");
     }
-
-    console.log(html_class_list);
-
 }
 
 function change_icon(){
