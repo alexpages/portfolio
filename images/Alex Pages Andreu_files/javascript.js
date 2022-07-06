@@ -7,23 +7,24 @@ function scrollFunction(){
     let myButton = document.getElementById("topButton");
     let header = document.getElementsByClassName("nav_bar_container")[0];
     let button_theme = document.getElementsByClassName("theme")[0];
-    let cs = getComputedStyle(document.querySelector(':root'));
-
-    let header_bg_blurred = cs.getPropertyValue('--header_background_color_blurred')
-    let header_bg = cs.getPropertyValue('--header_background_color')
     
     if (document.body.scrollTop >15 || document.documentElement.scrollTop>15){
         myButton.style.opacity=1;
         myButton.style.cursor="pointer";
         header.style.position="fixed";
-        header.style.setProperty("background-color",header_bg_blurred);
+        header.style.backgroundColor = "rgba(30,32,34,.48)";
+        header.style.transition="all ease-in 0,2s";
+        button_theme.style.transition="all ease-in 0,2s";
     }
     else{
         myButton.style.opacity=0;
         myButton.style.cursor="auto";
-        header.style.setProperty("background-color",header_bg);
+        header.style.backgroundColor = "#1E2022";
         header.style.position="static";
+        header.style.transition="all ease-in 0,2s";
+
         button_theme.style.backgroundColor = "transparent";
+        button_theme.style.transition="all ease-in 0,2s";
     }
 }
 
