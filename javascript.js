@@ -72,6 +72,10 @@ const menuDisplay = () =>{
     }
 }
 
+// temporary setup for better readibility, automatic detection of system preferences yet to be implemented
+document.documentElement.classList.add("dark");
+//
+
 function setTheme(){
     let html_class_list = document.documentElement.classList;
 
